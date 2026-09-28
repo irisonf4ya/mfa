@@ -1,22 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="mn">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мэдээллийн самбар</title>
+
 <style>
-body{
-    background-image: url('5F7A0603.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
 }
+
+body{
+    background:url("background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.overlay{
+    min-height:100vh;
+    background:rgba(0,0,0,0.5);
+}
+
+.header{
+    text-align:center;
+    color:white;
+    padding:50px 20px;
+}
+
+.header h1{
+    font-size:50px;
+}
+
+.header p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+.cards{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding-bottom:50px;
+}
+
+.card{
+    text-decoration:none;
+    color:white;
+    border-radius:20px;
+    padding:30px;
+    transition:0.3s;
+    backdrop-filter:blur(10px);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.red{
+    background:rgba(255,0,0,0.75);
+}
+
+.blue{
+    background:rgba(0,123,255,0.75);
+}
+
+.green{
+    background:rgba(40,167,69,0.75);
+}
+
+.orange{
+    background:rgba(255,140,0,0.75);
+}
+
+.card h2{
+    margin-top:15px;
+}
+
+.icon{
+    font-size:60px;
+}
+
+.footer{
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
 </style>
 </head>
+
 <body>
 
-<h1 style="color:white;text-align:center;padding-top:100px;">
-📢 Мэдээллийн самбар
-</h1>
+<div class="overlay">
 
-</body>
-</html>
+<div class="header">
+    <h1>📢 МЭДЭЭЛЛИЙН САМБАР</h1>
+    <p>Гадаад харилцааны яам</p>
+</div>
+
+<div class="cards">
+
+<a href="pdf/juram.pdf" ="icon">🛡️</div>
+<h2>Журам</h2>
+<p>Дотоод журам болон холбогдох баримт бичиг</p>
+</a>
+
+<a href="pdf/t
