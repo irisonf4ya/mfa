@@ -19,6 +19,15 @@ body{
     background:rgba(0,0,0,0.65);
 }
 
+.logo{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:100px;
+    height:auto;
+    z-index:9999;
+}
+
 .header{
     text-align:center;
     padding:40px;
@@ -30,14 +39,9 @@ body{
     margin:0;
 }
 
-    .header p{
-    text-align:center;
-    padding:40px;
-    color:white;
-}
 .header p{
-    font-size:70px;
-    margin:0;
+    font-size:40px;
+    margin-top:20px;
 }
 
 .cards{
@@ -50,24 +54,23 @@ body{
 }
 
 .card{
-background:rgba(255,255,255,0.15);
-backdrop-filter:blur(8px);
-border-radius:20px;
-min-height:250px;
- 
-text-decoration:none;
-color:white;
- 
-display:flex;
-flex-direction:column;
- 
-justify-content:center;
-align-items:center;
- 
-text-align:center;
-padding:20px;
- 
-transition:0.3s;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(8px);
+    border-radius:20px;
+    min-height:250px;
+
+    text-decoration:none;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:20px;
+
+    transition:0.3s;
 }
 
 .card:hover{
@@ -80,61 +83,21 @@ transition:0.3s;
 }
 
 .card h2{
-margin-top:15px;
-line-height:1.4;
-text-align:center;
-}
- 
-.card p{
-text-align:center;
-line-height:1.5;
+    margin-top:15px;
+    line-height:1.4;
+    text-align:center;
 }
 
-<style>
- 
-.logo{
-position:fixed;
-top:20px;
-right:20px;
-width:80px;
-z-index:9999;
-}
- 
 </style>
+
 </head>
 <body>
 
-<div class="overlay">
 <img src="logo.png" class="logo">
+
+<div class="overlay">
+
 <div class="header">
-<h1>Гадаад харилцааны яам</h1>
-<p>Мэдээллийн самбар</p>
-</div>
-
-<div class="cards">
-
-<a href="juram.pdf" class="card">
-<div class="icon">🛡️</div>
-<h2>Чиг үүрэг, үйл ажиллагааны стратеги, зохион байгуулалтын талаарх мэдээллийн ил тод, нээлттэй байдал</h2>
-</a>
-
-<a href="tushaal.pdf" class="card">
-<div class="icon">📄</div>
-<h2>Хүний нөөцийн талаарх мэдээллийн ил тод, нээлттэй байдал</h2>
-</a>
-
-<a href="zaavar.pdf" class="card">
-<div class="icon">💻</div>
-<h2>Төсөв, санхүү, худалдан авах ажиллагааны талаарх мэдээллийн ил тод, нээлттэй байдал</h2>
-</a>
-
-<a href="medee.pdf" class="card">
-<div class="icon">📢</div>
-<h2>Үзүүлж байгаа үйлчилгээний талаар дараах мэдээллийг байнга ил тод, нээлттэй байдал</h2>
-</a>
-
-    <a href="medee.pdf" class="card">
-<div class="icon">📢</div>
-<h2>Бусад мэдээллийн ил тод, нээлттэй байдал</h2>
-</a>
-
+    <h1>Гадаад харилцааны яам</h1>
+    <p>Мэдээллийн самбар</p>
+</div
