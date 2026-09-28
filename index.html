@@ -4,169 +4,163 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <title>Мэдээллийн самбар</title>
 
+
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
+chi ene code deer  zasaad buh codeg ni dahiad uguuch
 body{
-    font-family:Segoe UI, sans-serif;
+    margin:0;
+    font-family:Segoe UI,sans-serif;
     background:url('5F7A0603.JPG') center center/cover no-repeat fixed;
 }
 
+
 .overlay{
     min-height:100vh;
-    background:rgba(0,0,0,0.55);
+    background:rgba(0,0,0,0.65);
 }
-
 /* LOGO */
 .logo{
-    position:fixed;
-    top:15px;
-    right:15px;
-    width:80px;
-    height:auto;
-    z-index:9999;
+position:fixed;
+top:30px;
+right:30px;
+width:80px;
+height:auto;
+z-index:9999;
 }
 
-/* HEADER */
 .header{
     text-align:center;
+    padding:40px;
     color:white;
-    padding-top:40px;
-    padding-bottom:30px;
 }
+
 
 .header h1{
-    font-size:72px;
-    font-weight:bold;
+    font-size:70px;
+    margin:0;
 }
 
+
+    .header p{
+    text-align:center;
+    padding:40px;
+    color:white;
+}
 .header p{
-    font-size:40px;
-    margin-top:20px;
+    font-size:70px;
+    margin:0;
 }
 
-/* CARDS */
+
 .cards{
     width:90%;
     margin:auto;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:30px;
-    padding:20px;
+    padding:30px;
 }
+
 
 .card{
-    min-height:270px;
-
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(12px);
-
-    border-radius:25px;
-    text-decoration:none;
-    color:white;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-    padding:25px;
-
-    transition:0.3s;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(8px);
+border-radius:20px;
+min-height:250px;
+ 
+text-decoration:none;
+color:white;
+ 
+display:flex;
+flex-direction:column;
+ 
+justify-content:center;
+align-items:center;
+ 
+text-align:center;
+padding:20px;
+ 
+transition:0.3s;
 }
+
 
 .card:hover{
-    transform:translateY(-10px);
-    background:rgba(255,255,255,0.25);
+    transform:scale(1.05);
+    background:rgba(0,120,215,0.8);
 }
+
 
 .icon{
     font-size:60px;
-    margin-bottom:20px;
 }
+
 
 .card h2{
-    font-size:18px;
-    line-height:1.6;
+margin-top:15px;
+line-height:1.4;
+text-align:center;
+}
+ 
+.card p{
+text-align:center;
+line-height:1.5;
 }
 
-/* 5 дахь карт */
-.single-row{
-    width:22%;
-    margin-left:5%;
-    margin-top:20px;
-}
 
+<style>
+ 
+.logo{
+position:fixed;
+top:20px;
+right:20px;
+width:80px;
+z-index:9999;
+}
+ 
 </style>
 </head>
-
 <body>
 
 <img src="logo.png" class="logo">
-
 <div class="overlay">
 
 <div class="header">
-    <h1>Гадаад харилцааны яам</h1>
-    <p>Мэдээллийн самбар</p>
+<h1>Гадаад харилцааны яам</h1>
+<p>Мэдээллийн самбар</p>
 </div>
+
 
 <div class="cards">
 
-pdf/juram.pdf
-    <div class="icon">🛡️</div>
-    <h2>
-        Чиг үүрэг, үйл ажиллагааны стратеги,
-        зохион байгуулалтын талаарх мэдээллийн
-        ил тод, нээлттэй байдал
-    </h2>
+
+<a href="juram.pdf" class="card">
+<div class="icon">🛡️</div>
+<h2>Чиг үүрэг, үйл ажиллагааны стратеги, зохион байгуулалтын талаарх мэдээллийн ил тод, нээлттэй байдал</h2>
 </a>
 
-pdf/tushaal.pdf
-    <div class="icon">📄</div>
-    <h2>
-        Хүний нөөцийн талаарх мэдээллийн
-        ил тод, нээлттэй байдал
-    </h2>
+
+<a href="tushaal.pdf" class="card">
+<div class="icon">📄</div>
+<h2>Хүний нөөцийн талаарх мэдээллийн ил тод, нээлттэй байдал</h2>
 </a>
 
-pdf/zaavar.pdf
-    <div class="icon">💻</div>
-    <h2>
-        Төсөв, санхүү, худалдан авах ажиллагааны
-        талаарх мэдээллийн ил тод,
-        нээлттэй байдал
-    </h2>
+
+<a href="zaavar.pdf" class="card">
+<div class="icon">💻</div>
+<h2>Төсөв, санхүү, худалдан авах ажиллагааны талаарх мэдээллийн ил тод, нээлттэй байдал</h2>
 </a>
 
-pdf/medee.pdf
-    <div class="icon">📢</div>
-    <h2>
-        Үзүүлж байгаа үйлчилгээний талаар
-        дараах мэдээллийг байнга ил тод,
-        нээлттэй байдал
-    </h2>
+
+<a href="medee.pdf" class="card">
+<div class="icon">📢</div>
+<h2>Үзүүлж байгаа үйлчилгээний талаар дараах мэдээллийг байнга ил тод, нээлттэй байдал</h2>
 </a>
 
-</div>
 
-pdf/medee.pdf
-    <div class="icon">📌</div>
-    <h2>
-        Бусад мэдээллийн
-        ил тод, нээлттэй байдал
-    </h2>
+    <a href="medee.pdf" class="card">
+<div class="icon">📢</div>
+<h2>Бусад мэдээллийн ил тод, нээлттэй байдал</h2>
 </a>
-
-</div>
-
-</body>
-</html>
