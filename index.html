@@ -38,23 +38,30 @@ body{
     width:90%;
     margin:auto;
     display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:20px;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
     padding:30px;
 }
 
 .card{
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(8px);
-    border-radius:20px;
-    min-height:180px;
-    text-decoration:none;
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    transition:0.3s;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(8px);
+border-radius:20px;
+min-height:250px;
+ 
+text-decoration:none;
+color:white;
+ 
+display:flex;
+flex-direction:column;
+ 
+justify-content:center;
+align-items:center;
+ 
+text-align:center;
+padding:20px;
+ 
+transition:0.3s;
 }
 
 .card:hover{
@@ -67,7 +74,14 @@ body{
 }
 
 .card h2{
-    margin-top:10px;
+margin-top:15px;
+line-height:1.4;
+text-align:center;
+}
+ 
+.card p{
+text-align:center;
+line-height:1.5;
 }
 
 </style>
